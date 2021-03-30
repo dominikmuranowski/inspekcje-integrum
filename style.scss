@@ -1,0 +1,145 @@
+$theme-colors: (
+    "primary": #2EDA88,
+    "danger": #D7FAE9
+);
+
+$black: #212529;
+$variant: #2EDA88;
+$variant2: #D7FAE9;
+$sbg: #F4F9FF;
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/transitions";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/forms";
+@import "node_modules/bootstrap/scss/alert";
+@import "node_modules/bootstrap/scss/modal";
+@import "node_modules/bootstrap/scss/forms";
+
+.body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(29,38,61)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  }
+  
+.navbar-light.navbar-toggler {
+    border-color: rgb(29, 38, 61) !important;
+  } 
+
+.navbar-toggler-icon {
+    width: 1.5em !important;
+    background: 100% 100%/150% no-repeat !important;
+}
+
+.btn-info,
+.btn-info:hover,
+.btn-info:active,
+.btn-info:visited,
+.btn-info:focus {
+    color: $variant !important;
+    background-color: $variant2 !important;
+    border: none !important;
+}
+
+.btn-info:hover {
+    color: $variant2 !important;
+    background-color: $variant !important;
+}
+
+.btn-success,
+.btn-success:hover,
+.btn-success:active,
+.btn-success:visited,
+.btn-success:focus {
+    color: white !important;
+    background-color: $variant !important;
+    border: none !important;
+}
+
+.btn-success:hover {
+    color: $variant !important;
+    background-color: white !important;
+}
+
+.nav-link {
+    font-size: 1rem;
+    color: $black !important;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+    .navbar-nav li{
+        position: relative;
+    }
+    .navbar-nav li a::after {
+        content: "";
+        display: block;
+        height: .3em;
+        left: 0;
+        width: 0;
+        top: 4.5em;
+        background-color: $black;
+        position: absolute;
+        transition: all ease-in-out 250ms;
+        margin-left: 0 ; 
+        
+    }
+    .navbar-nav li a:hover::after{
+        width: 100%;
+    }
+
+    .start {
+        background-color: $sbg;
+        z-index: 1;
+    }
+
+    .start-box {
+        margin-top: 5rem;
+    }
+
+    .person-container {
+        width: 200px !important;
+        height: 120px;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .person-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .person-container-2 {
+        width: 400px;
+        height: 200px;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .person-container-2 img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .aboutme {
+        margin-top: -50px;
+        font-size: .6rem;
+        background-color: white;
+        padding: 1em;
+    }
+
+    .bg {
+        background-image: url('/images/group_7.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 140% auto;
+    }
